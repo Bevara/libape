@@ -1,0 +1,17 @@
+{
+    "name": "libape",
+    "description": "Monkey's Audio decoder",
+    "filters":["apedec"],
+    "help": "This filter decodes Monkey's Audio (.ape) files using the Monkey's Audio SDK.",
+    "support": [
+        "audio"
+    ],
+    "sources":"https://bevara.ddns.net/sources/libape.accessor",
+    "filter_source":{
+        "apedec" : "dec_ape.cpp"
+    },
+    "extension":{
+      "ape" : "audio"
+    },
+    "licence_required":false
+}
