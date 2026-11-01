@@ -42,7 +42,7 @@ static void apedec_emit_weak_symbols(void)
  * minimal solver does not export. The filter never passes a filename - it
  * decodes from memory through CIO - so these only have to be present, not
  * locale-aware. Defining them here keeps the module loadable next to
- * solver_minimal_1, like every other filter in this repo.
+ * mm_solver_minimal_1.0.1, like every other filter in this repo.
  *
  * They are deliberately ASCII-only: anything else would be dead code here. */
 extern "C" {
@@ -90,7 +90,7 @@ char *setlocale(int category, const char *locale)
 }
 
 /* Monkey's Audio reports some failures by throwing, and the host solver does
- * not export __cxa_throw (checked on solver_1 and solver_minimal_1), so the
+ * not export __cxa_throw (checked on mm_solver_1.0.1 and mm_solver_minimal_1.0.1), so the
  * side module would not instantiate without this definition. A file that makes
  * the SDK throw therefore ends the module rather than returning an error;
  * well formed files never reach it. */
