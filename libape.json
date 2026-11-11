@@ -1,19 +1,28 @@
 {
     "name": "libape",
     "description": "Monkey's Audio decoder",
-    "filters":["apedec"],
+    "filters": [
+        "apedec"
+    ],
     "help": "This filter decodes Monkey's Audio (.ape) files using the Monkey's Audio SDK.",
     "support": [
         "audio"
     ],
-    "sources":"https://bevara.ddns.net/sources/libape.accessor",
-    "filter_source":{
-        "apedec" : "dec_ape.cpp"
+    "sources": "https://bevara.ddns.net/sources/libape.accessor",
+    "filter_source": {
+        "apedec": "dec_ape.cpp"
     },
-    "extension":{
-      "ape" : "audio"
+    "extension": {
+        "ape": "audio"
     },
-    "using": ["mm_solver_minimal_1.0.1", "mm_solver_1.0.1", "mm_solver_1.0.2", "mm_solver_1.0.3", "mm_solver_1.0.4"],
+    "using": [
+        "mm_solver_minimal_1.0.1",
+        "mm_solver_1.0.1",
+        "mm_solver_1.0.2",
+        "mm_solver_1.0.3",
+        "mm_solver_1.0.4",
+        "mm_solver_1.0.5"
+    ],
     "patents": {
         "status": "royalty-free",
         "note": "Monkey's Audio",
